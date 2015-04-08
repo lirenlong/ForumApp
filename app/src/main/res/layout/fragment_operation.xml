@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="按用户名查询"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/op_edittext_specusr"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:hint="用户名(模糊查询)"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/op_button_specok"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="确定"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="其他管理操作"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/op_button_showall"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:text="查看用户列表" />
+
+            <Button
+                android:id="@+id/op_button_add"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="增加新用户" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
